@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-container',
@@ -6,9 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./container.component.css']
 })
 export class ContainerComponent implements OnInit {
-  title = 'my-first-app';
+  @Input() title: string;
   currentRate = 8;
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
