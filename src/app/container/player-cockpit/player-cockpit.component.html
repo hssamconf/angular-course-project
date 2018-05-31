@@ -1,0 +1,18 @@
+<form>
+  <div class="form-group">
+    <label for="name">Player Name</label>
+    <input type="text" class="form-control" id="name" name="name" aria-describedby="Name of the player" [(ngModel)]="player.name"
+           placeholder="Enter PLayer Name">
+  </div>
+  <div class="form-group">
+    <label for="team">Team Name</label>
+    <input type="text" class="form-control" id="team" name="team" aria-describedby="Name of the player's team" [(ngModel)]="player.team"
+           placeholder="Enter Team Name">
+  </div>
+  <div class="form-group">
+    <label for="goals">Number Of Scored Goals</label>
+    <input type="number" class="form-control" id="goals" name="goals" aria-describedby="Name of the scored goals by the player" [(ngModel)]="player.goals"
+           placeholder="Enter Goals">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="onAddToList()">Add to list</button>
+</form>

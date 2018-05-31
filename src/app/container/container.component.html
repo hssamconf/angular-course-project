@@ -9,11 +9,20 @@
         <li>Ng-Bootstrap 2.0.0 / Bootstrap 4.1.1</li>
       </ul>
       <ngb-rating [(rate)]="currentRate"></ngb-rating>
-      <hr>
       <pre>Rate: <b>{{currentRate}}</b></pre>
     </div>
   </div>
 
-  <app-player-list></app-player-list>
+  <hr>
+
+  <div class="row">
+    <div class="col-md-6">
+      <app-player-cockpit (playerCreated)="onPlayerCreated($event)"></app-player-cockpit>
+    </div>
+
+    <div class="col-md-6">
+      <app-player-list [players]="players"></app-player-list>
+    </div>
+  </div>
 
 </div>
