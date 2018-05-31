@@ -5,12 +5,14 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {AppComponent} from './app.component';
 import { ContainerComponent } from './container/container.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PlayerListComponent } from './container/player-list/player-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContainerComponent,
-    NavbarComponent
+    NavbarComponent,
+    PlayerListComponent
   ],
   imports: [
     BrowserModule, NgbModule.forRoot()
