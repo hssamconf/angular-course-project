@@ -1,10 +1,11 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ViewEncapsulation} from '@angular/core';
 import {Player} from './player';
 
 @Component({
   selector: 'app-container',
   templateUrl: './container.component.html',
-  styleUrls: ['./container.component.css']
+  styleUrls: ['./container.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ContainerComponent implements OnInit {
   @Input() title: string;
