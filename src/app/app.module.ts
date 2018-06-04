@@ -8,6 +8,7 @@ import { ContainerComponent } from './container/container.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PlayerListComponent } from './container/player-list/player-list.component';
 import { PlayerCockpitComponent } from './container/player-cockpit/player-cockpit.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PlayerCockpitComponent } from './container/player-cockpit/player-cockpi
     ContainerComponent,
     NavbarComponent,
     PlayerListComponent,
-    PlayerCockpitComponent
+    PlayerCockpitComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule, NgbModule.forRoot(), FormsModule
